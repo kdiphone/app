@@ -9,7 +9,9 @@
     "@sap-cloud-sdk/http-client": "^3.9.0",
     "@sap-cloud-sdk/resilience": "^3.9.0",
     "@sap/cds": "^7",
-    "express": "^4"
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
@@ -24,9 +26,12 @@
         "kind": "odata",
         "model": "srv/external/Northwind",
         "[backend]": {
-          "credentials": {
-            "url": "https://services.odata.org/Experimental/OData/OData.svc"
-          }
+          "credentials": {           
+            "url":"https://services.odata.org/Experimental/OData/OData.svc"       
+            }
+        },
+        "uaa": {
+          "kind": "xsuaa"
         }
       }
     }
