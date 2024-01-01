@@ -26,10 +26,9 @@
         "kind": "odata",
         "model": "srv/external/Northwind",
         "[backend]": {
-          "credentials": {  
-            "destination":"Northwind_Mapletree"         
-                   
-            }
+          "credentials": {
+            "destination": "Northwind_Mapletree"
+          }
         },
         "uaa": {
           "kind": "xsuaa"
